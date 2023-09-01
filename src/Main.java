@@ -1,17 +1,23 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner in = new Scanner(System.in);
+        // Variables
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // 2 objetos Persona
+        Persona eva00 = new Persona("Rei", "Ayanami", "Gonzales", 30, 3, 2001);
+        Persona eva01 = new Persona("Shinji", "Ikari", "Torres", 6, 6, 2001);
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // Desplegar nombres de los 2 objetos
+        System.out.println(eva00.getNombre());
+        System.out.println(eva01.getNombre()+"\n");
+
+        // Desplegar todos los datos de cada uno de los objetos Persona
+        System.out.println(eva00.toString());
+        System.out.println(eva01.toString());
+
+        // Desplegar si son iguales
+
     }
 }
