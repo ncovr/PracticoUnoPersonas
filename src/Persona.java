@@ -1,3 +1,7 @@
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
 public class Persona {
     private String primerNombre;
     private String apellidoPaterno;
@@ -34,5 +38,9 @@ public class Persona {
 
     public String toString(){
         return (getNombre()+"; "+getAnioNacimiento());
+    } // Retorna nombre aP aM; (dd/mm/aa)
+
+    public boolean iguales(String otro){
+        return (toString().equals(otro.toString()));
     }
 }
